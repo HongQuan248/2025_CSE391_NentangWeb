@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .form-section { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+    .form-section h3 { margin-top: 0; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 5px; }
+    .radio-group, .checkbox-group { display: flex; gap: 10px; margin-top: 5px; }
+    .form-footer { display: flex; gap: 10px; }
+    .captcha { font-weight: bold; font-size: 24px; letter-spacing: 3px; margin: 10px 0; }
+  </style>
+</head>
+<body>
+
+<form>
+  <div class="form-section">
+    <h3>Basic Info</h3>
+    <div>
+    <label style="font-weight: bold;">Employee ID:</label>
+    <span>9</span>
+    </div>
+
+    <label>Last Name
+      <input type="text" value="Dodsworth" required>
+    </label>
+
+    <label>First Name
+      <input type="text" value="Anne" required>
+    </label>
+
+    <label>Gender</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender"> Male</label>
+      <label><input type="radio" name="gender" checked> Female</label>
+      <label><input type="radio" name="gender"> xxx</label>
+      <label><input type="radio" name="gender"> ZZZ</label>
+    </div>
+
+    <label>Title
+      <input type="text" value="Sales Representative">
+    </label>
+
+    <label>Suffix
+      <input type="text" value="Ms.">
+    </label>
+
+    <label>BirthDate
+      <input type="datetime-local" value="1969-07-02T00:00:00">
+    </label>
+
+    <label>HireDate
+      <input type="datetime-local" value="1994-11-15T00:00:00">
+    </label>
+
+    <label>SSN (if applicable)
+      <input type="text">
+    </label>
+
+    <label>Reports To
+      <select>
+        <option>Buchanan</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="form-section">
+    <h3>Contact Info</h3>
+    <label>Email
+      <input type="email" placeholder="name@example.com">
+    </label>
+
+    <label>Address
+      <input type="text" value="7 Houndstooth Rd.">
+    </label>
+
+    <label>City
+      <input type="text" value="London">
+    </label>
+
+    <label>Region
+      <input type="text">
+    </label>
+
+    <label>Postal Code
+      <input type="text" value="WG2 7LT">
+    </label>
+
+    <label>Country
+      <select>
+        <option>Russian Federation</option>
+      </select>
+    </label>
+
+    <label>US Home Phone
+      <input type="text" value="(234)234-2342">
+    </label>
+
+    <label>Photo
+      <input type="text" value="EmpID9.bmp">
+    </label>
+  </div>
+
+  <div class="form-section">
+    <h3>Optional Info</h3>
+    <label>Notes
+      <textarea rows="5">Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ</textarea>
+    </label>
+
+    <label>Preferred Shift</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Regular</label>
+      <label><input type="checkbox" checked> Gravy Yard</label>
+    </div>
+
+    <label>
+      <input type="checkbox" checked> Active?
+    </label>
+
+    <label>Are you human?</label>
+    <div class="captcha">TIDAWO</div>
+    <input type="text" placeholder="Enter CAPTCHA">
+  </div>
+
+  <div class="form-footer">
+    <button type="submit">Submit</button>
+    <button type="reset">Cancel</button>
+  </div>
+</form>
+
+</body>
+</html>
