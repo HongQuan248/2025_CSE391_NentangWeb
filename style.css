@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 500px;
+    border-radius: 5px;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form textarea {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form input[type="radio"] {
+    margin-left: 10px;
+}
+
+#btnThem {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#btnThem:hover {
+    background-color: #45a049;
+}
+
+#thongBao {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+a {
+    margin: 0 5px;
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+form label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    vertical-align: top; /* Căn theo top để khớp hàng với textarea */
+}
+
+form textarea {
+    width: 300px;
+    height: 80px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    resize: vertical;
+    margin-bottom: 10px;
+}
