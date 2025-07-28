@@ -1,0 +1,46 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.table-wrapper {
+  background: #fff;
+  padding: 20px;
+  margin-top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.table-title {
+  padding-bottom: 15px;
+  background: #2f4050;
+  color: #fff;
+  padding: 10px 30px;
+  margin: -20px -20px 10px;
+  border-radius: 3px 3px 0 0;
+}
+
+.table-title h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.table td i {
+  font-size: 18px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.table td i.edit {
+  color: #ffc107;
+}
+
+.table td i.delete {
+  color: #dc3545;
+}
+
+/* Thanh TLU Home Employees */
+.header-bar {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  border-radius: 4px 4px 0 0;
+}
