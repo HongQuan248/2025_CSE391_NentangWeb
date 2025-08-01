@@ -1,0 +1,310 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    color: #222;
+}
+.header {
+    background: #222;
+    color: #fff;
+    padding: 0;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    background: #222;
+    color: #fff;
+}
+.school {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.header-left .school {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 18px;
+    font-weight: 500;
+}
+.main-nav a:last-child {
+    margin-right: 0;
+}
+.search-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.search-group input {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.search-btn {
+    background: none;
+    border: 1px solid #ccc;
+    color: #1abc9c;
+    padding: 5px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+main {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.transaction-section {
+    padding: 24px 0 24px 0;
+    margin-top: 18px;
+}
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0 12px 0;
+    gap: 16px;
+}
+.toolbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.toolbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.add-btn {
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 7px 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.export-btn {
+    background: #e3eaf3;
+    color: #222;
+    border: none;
+    padding: 7px 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.export-btn .arrow {
+    margin-left: auto;
+    font-size: 22px; /* to hơn mặc định 16px */
+    font-weight: bold;
+}
+
+.search-trans {
+    padding: 7px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+    min-width: 260px;
+}
+.result-select {
+    padding: 7px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 12px 0;
+    background: #fff;
+}
+.transaction-table th, .transaction-table td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1em;
+}
+.transaction-table th {
+    background: #222;
+    color: #fff;
+    font-weight: 600;
+}
+.action-btn {
+    border: none;
+    border-radius: 4px;
+    margin-right: 4px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.action-btn.delete {
+    background: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+}
+.action-btn.view {background: url('data:image/svg+xml;utf8,<svg fill="#2196F3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.5C7.305 4.5 3.135 7.36 1.5 12c1.635 4.64 5.805 7.5 10.5 7.5s8.865-2.86 10.5-7.5C20.865 7.36 16.695 4.5 12 4.5zm0 12c-2.485 0-4.5-2.015-4.5-4.5s2.015-4.5 4.5-4.5 4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5z"/></svg>') no-repeat center center;
+    background-size: 18px 18px;
+}
+.action-btn.edit {
+    background: url('data:image/svg+xml;utf8,<svg fill="orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75l11.06-11.06-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>') no-repeat center center;
+    background-size: 18px 18px;
+}
+.delete-selected {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 18px 32px 0 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 0 0;
+    padding: 0 8px;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.pagination .active {
+    background: #2196F3;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.result-info {
+    color: #222;
+    font-size: 1em;
+}
+.footer {
+    background: #0a2a6c;
+    color: #fff;
+    margin-top: 32px;
+    padding-left: 140px;
+}
+.footer-content {
+    max-width: 1200px;
+}
+.footer-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.footer-content p {
+    margin: 4px 0;
+    font-size: 1em;
+}
+.modal-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal-content {
+    background: #fff;
+    border: 1.5px solid #3b5c82;
+    border-radius: 6px;
+    min-width: 380px;
+    max-width: 96vw;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px 8px 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.modal-title {
+    font-size: 1.6em;
+    color: #3b5c82;
+    font-weight: 500;
+}
+.modal-close {
+    font-size: 1.6em;
+    color: #888;
+    cursor: pointer;
+    font-weight: bold;
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.modal-form label {
+    margin: 18px 24px 0 24px;
+    color: #3b5c82;
+    font-size: 1em;
+}
+.modal-form input {
+    margin: 8px 24px 0 24px;
+    padding: 10px;
+    border: 1px solid #bfc9d4;
+    border-radius: 4px;
+    font-size: 1em;
+    background: #f8fafc;
+    transition: border 0.2s;
+}
+.modal-form input:focus {
+    border: 1.5px solid #3b5c82;
+    outline: none;
+}
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;align-items: center;
+    background: #f4f6f9;
+    padding: 16px 24px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 24px;
+    gap: 26px;
+}
+.modal-cancel {
+    background: none;
+    border: none;
+    color: #222;
+    font-size: 1em;
+    cursor: pointer;
+}
+.modal-add {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.action-btn.view {
+    background-color: #3498db; /* xanh da trời */
+}
+
+/* Nút SỬA – Vàng */
+.action-btn.edit {
+    background-color: #f1c40f; /* vàng */
+    color: black; /* chữ đen cho dễ nhìn trên nền vàng */
+}

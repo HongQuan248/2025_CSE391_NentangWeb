@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý giao dịch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-left">
+                <span class="school">Trường Đại học Thủy lợi</span>
+            </div>
+            <div class="header-right">
+                <nav class="main-nav">
+                    <a href="#">Trang chủ</a>
+                    <a href="#">Quản lý của hàng</a>
+                </nav>
+                <div class="search-group">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button class="search-btn">TÌM KIẾM</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="transaction-section">
+            <div class="toolbar">
+                <div class="toolbar-left">
+                    <button class="add-btn" id="showAddTransForm">
+                        <i class="fas fa-plus"></i> THÊM
+                    </button>
+
+                    <button class="export-btn">
+                      <i class="fas fa-upload"></i> XUẤT RA FILE <span class="arrow">&rsaquo;</span>
+                    </button>
+
+                </div>
+                <div class="toolbar-center">
+                    <div class="search-wrapper">
+                    <div class="search-wrapper">
+    <input type="text" class="search-trans" placeholder="Tìm kiếm giao dịch">
+    <i class="fas fa-search search-icon"></i>
+</div>
+
+                    </div>
+
+                </div>
+                <div class="toolbar-right">
+                    <select class="result-select">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+            </div>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>x</th>
+                        <th>Hành động</th>
+                        <th>ID</th>
+                        <th>Khách hàng</th>
+                        <th>Nhân viên</th>
+                        <th>Số tiền</th>
+                        <th>Ngày mua</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>x</td>
+                        <td>
+    <button class="action-btn view" title="Xem"><i class="fas fa-eye"></i></button>
+    <button class="action-btn edit" title="Sửa"><i class="fas fa-pen"></i></button>
+    <button class="action-btn delete" title="Xóa"><i class="fas fa-trash"></i></button>
+</td>
+                        <td>1102</td>
+                        <td>Vũ Hoài An</td>
+                        <td>Mai Thục Anh</td>
+                        <td>250 000</td>
+                        <td>06 Tháng 6 2024 9:00</td>
+                    </tr>
+                    <tr>
+                      <td>x</td>
+                        <td>
+    <button class="action-btn view" title="Xem"><i class="fas fa-eye"></i></button>
+    <button class="action-btn edit" title="Sửa"><i class="fas fa-pen"></i></button>
+    <button class="action-btn delete" title="Xóa"><i class="fas fa-trash"></i></button>
+</td>
+                        </td><td>1199</td>
+                        <td>Hoàng Thị Thắng</td>
+                        <td>Nguyễn Văn Hồng</td>
+                        <td>600 000</td>
+                        <td>06 Tháng 6 2024 9:03</td>
+                    </tr>
+                    <tr>
+                      <td>x</td>
+                        <td>
+    <button class="action-btn view" title="Xem"><i class="fas fa-eye"></i></button>
+    <button class="action-btn edit" title="Sửa"><i class="fas fa-pen"></i></button>
+    <button class="action-btn delete" title="Xóa"><i class="fas fa-trash"></i></button>
+</td>
+                        <td>1239</td>
+                        <td>Nguyễn Huy Quang</td>
+                        <td>Nguyễn Văn Hồng</td>
+                        <td>934 000</td>
+                        <td>06 Tháng 6 2024 9:10</td>
+                    </tr>
+                    <tr>
+                      <td>x</td>
+                            <td>
+    <button class="action-btn view" title="Xem"><i class="fas fa-eye"></i></button>
+    <button class="action-btn edit" title="Sửa"><i class="fas fa-pen"></i></button>
+    <button class="action-btn delete" title="Xóa"><i class="fas fa-trash"></i></button>
+</td>
+                        <td>1677</td>
+                        <td>Huỳnh Văn Nam</td>
+                        <td>Mai Thục Anh</td>
+                        <td>150 000</td>
+                        <td>06 Tháng 6 2024 9:20</td>
+                    </tr>
+                    <tr>
+                      <td>x</td>
+                            <td>
+    <button class="action-btn view" title="Xem"><i class="fas fa-eye"></i></button>
+    <button class="action-btn edit" title="Sửa"><i class="fas fa-pen"></i></button>
+    <button class="action-btn delete" title="Xóa"><i class="fas fa-trash"></i></button>
+</td>
+
+                        <td>1699</td>
+                        <td>Nguyễn Minh Hiển</td>
+                        <td>Mai Thục Anh</td>
+                        <td>354 000</td>
+                        <td>06 Tháng 6 2024 9:24</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="delete-selected">
+              <i class="fas fa-times"></i> DELETE SELECTED RECORDS
+            </button>
+
+            <hr>
+            
+            <div class="pagination-container">
+                <div class="pagination">
+                    <span>Trang</span>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>&raquo;</span>
+                </div>
+                <div class="result-info">Kết quả 1 trong 20 trang</div>
+            </div>
+            <div class="modal-bg" id="addTransModal" style="display:none;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modal-title">Thêm giao dịch</span>
+                        <span class="modal-close" id="closeAddTransModal">&times;</span>
+                    </div>
+                    <form id="addTransForm" class="modal-form"><label>Khách hàng</label>
+                        <input type="text" name="customer" required>
+                        <label>Nhân viên</label>
+                        <input type="text" name="employee" required>
+                        <label>Số tiền</label>
+                        <input type="number" name="amount" required>
+                        <div class="modal-actions">
+                            <button type="button" class="modal-cancel" id="cancelAddTransModal">Hủy</button>
+                            <button type="submit" class="modal-add">Thêm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>TRƯỜNG ĐẠI HỌC THỦY LỢI</h3>
+            <p>Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội</p>
+            <p>Điện thoại: (024) 38522201 - Fax: (024) 35633351</p>
+            <p>Email: phongctct@tlu.edu.vn</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="styledethi2.css">
+    <script src="dethi2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</body>
+</html>
