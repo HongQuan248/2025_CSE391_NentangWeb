@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại học Thủy lợi - Quản lý Nhân viên</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styledethi3.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Trường Đại học Thủy lợi</h1>
+        <div class="header-right">
+            <span>Trang chủ</span>
+            <span>Quản lý cửa hàng</span>
+            <div class="header-search">
+                <input type="text" placeholder="Nhập nội dung tìm kiếm" class="header-search-input">
+                <button class="header-search-btn">🔍</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="alert alert-success" id="successAlert"></div>
+        <div class="alert alert-error" id="errorAlert"></div>
+
+        <div class="toolbar">
+            <button class="btn btn-primary" id="addBtn">
+                <span>+</span> THÊM MỚI
+            </button>
+            <button class="btn btn-success" id="exportBtn">
+                <span>📤</span> XUẤT RA FILE
+            </button>
+            
+            <div class="search-box">
+                <span>Kết quả:</span>
+                <select id="pageSize">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Tìm kiếm nhân viên...">
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>Hành động</th>
+                        <th data-sort="id">STT ↕</th>
+                        <th data-sort="name">Tên ↕</th>
+                        <th data-sort="surname">Họ đệm ↕</th>
+                        <th data-sort="address">Địa chỉ ↕</th>
+                        <th data-sort="status">Hoạt động ↕</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <div>Kết quả <span id="currentResults">1 đến 4</span></div>
+            <div class="pagination-buttons" id="paginationButtons">
+            </div>
+        </div>
+    </div>
+
+    <div id="employeeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Thêm Nhân viên</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="employeeForm">
+                    <div class="form-group">
+                        <label for="employeeName">Tên</label>
+                        <input type="text" id="employeeName" name="employeeName" maxlength="15">
+                        <div class="character-count" id="nameCount">0/15 ký tự</div>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="employeeSurname">Họ đệm</label>
+                        <input type="text" id="employeeSurname" name="employeeSurname" maxlength="20">
+                        <div class="character-count" id="surnameCount">0/20 ký tự</div>
+                        <div class="error-message" id="surnameError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="employeeAddress">Địa chỉ</label>
+                        <input type="text" id="employeeAddress" name="employeeAddress" maxlength="50">
+                        <div class="character-count" id="addressCount">0/50 ký tự</div>
+                        <div class="error-message" id="addressError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="employeeStatus">Hoạt động</label>
+                        <select id="employeeStatus" name="employeeStatus">
+                            <option value="✓">Hoạt động (✓)</option>
+                            <option value="✗">Không hoạt động (✗)</option>
+                        </select>
+                        <div class="error-message" id="statusError"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel" id="cancelBtn">Hủy</button>
+                <button type="button" class="btn btn-success" id="saveBtn">Thêm</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>TRƯỜNG ĐẠI HỌC THỦY LỢI</h3>
+        <p>Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội</p>
+        <p>Điện thoại: (024) 38522201 - Fax: (024) 35633551</p>
+        <p>Email: phonghcth@tlu.edu.vn</p>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="dethi3.js"></script>
+</body>
+</html>
