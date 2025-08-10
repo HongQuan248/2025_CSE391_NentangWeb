@@ -1,41 +1,38 @@
-const employeeData = [
+export default [
     {
-        id: 1,
-        name: "Khánh",
-        surname: "Nguyễn Nhật",
-        address: "12 Trần Phú, Ba Đình, Hà Nội",
-        status: "✓"
+      id: 1,
+      studentId: "01",
+      fullName: "Nguyễn Hồng Quân",
+      email: "hquan@gmail.com",
+      gender: "Nam",
+      birthDate: "2004-08-24",
+      notes: "Sinh viên giỏi"
     },
     {
-        id: 2,
-        name: "An",
-        surname: "Đặng Thị",
-        address: "86 Võ Văn Kiệt, Quận 1, TP.HCM",
-        status: "✗"
+      id: 2,
+      studentId: "02", 
+      fullName: "Đặng Văn Linh",
+      email: "dvlinh@gmail.com",
+      gender: "Nam",
+      birthDate: "2004-12-12",
+      notes: "Sinh viên khá"
     },
     {
-        id: 3,
-        name: "Minh",
-        surname: "Phan Quốc",
-        address: "11 Lê Lợi, Hải Châu, Đà Nẵng",
-        status: "✓"
+      id: 3,
+      studentId: "03",
+      fullName: "Trần Hoàng Nhất",
+      email: "tranhoangnhat@gmail.com", 
+      gender: "Nam",
+      birthDate: "2004-05-04",
+      notes: "Sinh viên yếu"
     },
     {
-        id: 4,
-        name: "Lan",
-        surname: "Lý Kim",
-        address: "7 Nguyễn Thái Học, Hội An, Quảng Nam",
-        status: "✓"
-    },
-    {
-        id: 5,
-        name: "Phong",
-        surname: "Trịnh Văn",
-        address: "91 Phạm Hùng, Nam Từ Liêm, Hà Nội",
-        status: "✗"
+      id: 4,
+      studentId: "04",
+      fullName: "Hà Quang Dương",
+      email: "quangduong@gmail.com",
+      gender: "Nam", 
+      birthDate: "2001-05-08",
+      notes: "Sinh viên khá"
     }
-];
-
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = employeeData;
-}
+  ]
